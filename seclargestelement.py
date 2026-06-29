@@ -14,3 +14,14 @@ for i in range(0,n):
     if nums[i]>s_largest and nums[i]!=largest:
         s_largest=nums[i]
 print(s_largest)
+
+#optimal solution
+l=float("-inf")
+sl=float("-inf")
+for i in range(0,n):
+    if nums[i]>l:
+        sl=l
+        l=nums[i]
+    elif nums[i]>sl and nums[i]!=l:
+        sl=nums[i]
+print(sl)
