@@ -23,3 +23,4 @@ while j<m:
         merged.append(nums2[j])
     j+=1
 print(merged)
+
